@@ -12,7 +12,8 @@ def cadastro(request):
     if form.is_valid():
         form.save()
         args['msg'] = 'Cadastro Realizado com sucesso'
-        
+    
+    
         return redirect('/')
     return render(request, 'cadastro.html', args)
 
