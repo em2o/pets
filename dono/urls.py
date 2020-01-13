@@ -3,5 +3,12 @@ from dono.views import cadastro
 
 urlpatterns = [
     path('cadastro/', cadastro),
+    path()
+
+
+
 ]
+
+
+
 
