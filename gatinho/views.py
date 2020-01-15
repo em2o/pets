@@ -52,3 +52,4 @@ def update(request, id):
         'form':form
     }
     return render(request, 'update.html', args)
+    
