@@ -18,9 +18,11 @@ from django.urls import path, include
 
 from gatinho.views import home, detail, delete, update
 import dono.urls
+import cachorro.urls
 
 urlpatterns = [
     path('', home),
+    path('cachorro/', include('cachorro.urls')),
     path('dono/', include('dono.urls')),
     path('detail/<int:id>', detail),
     path('delete/<int:id>', delete),
