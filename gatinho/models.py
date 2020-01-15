@@ -15,7 +15,7 @@ class Gatinho(models.Model):
         ('laranja','laranja'),
         ('bege','bege'),
         ('tricolor','tricolor'),
-        ('laranja','laranja'),
+        
 
     )
     cor = models.CharField(choices=cor_do_pelo, max_length=100)

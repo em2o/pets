@@ -1,15 +1,11 @@
 {% extends 'index.html' %}
 {% block body %}
-    <div class="container">
-        <h2>Cadastro de Login</h2>
-        <form action="." method="POST">
-            {% csrf_token %}
-            {{ form.as_p }}
-            <input class="btn-primary" type='submit' value="login">
-        </form>
-        </div>
-    { % endblock body %}
-
-
-
- 
+<div class="container">
+    <h2>Cadastro de Login</h2>
+    <form action="." method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input class="btn-primary" type='submit' value="login">
+    </form>
+</div>
+{% endblock body %}
