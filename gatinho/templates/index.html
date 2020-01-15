@@ -19,6 +19,18 @@
     <a class="btn btn-sm btn-outline-secondary" href="/dono/cadastro" style="color:white;border-color:white;">Cadastro de Donos</a>
   </nav>
     {% block body %}
+
+    {% if user.is_authenticated %}
+
+        <p>
+
+        Olá {{ user.username }} seja bem vindo!
+
+        <span ><a href="{% url 'logout' %}">Sair</a></span>
+
+         </p>
+
+    {% endif %}
     <section class="container">
         <h1>Cadastro de Gatinhos</h1>
         <form method="POST">
